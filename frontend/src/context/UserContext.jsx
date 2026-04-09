@@ -7,7 +7,7 @@ import axiosRateLimit from 'axios-rate-limit'
 
 export const userDataContext = createContext()
 function UserContext({ children }) {
-  const serverUrl = import.meta.env.BACKEND_URL || "http://localhost:8000"
+  const serverUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
   const [userData, setUserData] = useState(null)
   const [frontendImage, setFrontendImage] = useState(null)
   const [backendImage, setBackendImage] = useState(null)
