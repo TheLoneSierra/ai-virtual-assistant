@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { IoArrowBack } from "react-icons/io5";
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import image4 from "../assets/botimg4.jpg"

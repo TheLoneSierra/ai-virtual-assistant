@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import { useContext } from "react"
-import { userDataContext } from "./context/userContext"
+import { userDataContext } from "./context/UserContext"
 
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
@@ -41,7 +41,7 @@ function App() {
         path="/customize"
         element={userData ? <Customize /> : <Navigate to="/signup" />}
       />
-       <Route
+      <Route
         path="/customize2"
         element={userData ? <Customize2 /> : <Navigate to="/signup" />}
       />
@@ -50,7 +50,7 @@ function App() {
         element={userData ? <AssistantDisplay /> : <Navigate to="/signin" />}
       />
     </Routes>
-    
+
   )
 }
 

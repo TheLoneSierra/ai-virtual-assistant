@@ -1,5 +1,5 @@
 import React, { useRef, useContext } from 'react'
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
 import image2 from "../assets/botimg2.jpg"
 import image3 from "../assets/botimg3.jpg"
